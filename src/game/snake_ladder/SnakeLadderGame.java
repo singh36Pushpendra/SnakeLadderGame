@@ -28,6 +28,8 @@ public class SnakeLadderGame {
                 case 1:
                     System.out.println("Ladder!");
                     userPos += dieNum;
+                    if (userPos > 100)
+                        userPos -= dieNum;
                     break;
                 default:
                     System.out.println("Snake!");
