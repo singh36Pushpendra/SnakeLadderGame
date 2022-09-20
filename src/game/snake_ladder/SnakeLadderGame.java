@@ -38,9 +38,10 @@ public class SnakeLadderGame {
                         userPos = 0;
                     }
             }
-            System.out.println("New position of user: " + userPos);
+            System.out.println("User played " + count + " times till now!");
+            System.out.println("New position of user: " + userPos + "\n");
         }
-        System.out.println("User Wins by rolling a die " + count + " times!");
+        System.out.println("Total " + count + " times dice was played to win!");
     }
 
 }
