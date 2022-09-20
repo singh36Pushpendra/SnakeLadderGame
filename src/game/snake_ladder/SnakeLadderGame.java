@@ -15,6 +15,24 @@ public class SnakeLadderGame {
         
         int dieNum = 1 + random.nextInt(6);
         System.out.println("Die number: " + dieNum);
+        
+        int checkOption = random.nextInt(3);
+        
+        switch(checkOption) {
+            case 0:
+                System.out.println("No Play!");
+                break;
+            case 1:
+                System.out.println("Ladder!");
+                userPos += dieNum;
+                break;
+            default:
+                System.out.println("Snake!");
+                userPos -= dieNum;
+                if (userPos < 0)
+                    userPos = 0;
+        }
+        System.out.println("New position of user: " + userPos);
     }
     
 }
